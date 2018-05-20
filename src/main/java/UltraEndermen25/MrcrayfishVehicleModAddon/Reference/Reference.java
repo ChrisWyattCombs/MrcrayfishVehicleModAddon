@@ -7,6 +7,6 @@ public class Reference {
     public static final String MOD_COMPATIBILITY = "[1.12.2]";
     public static final String MOD_DEPENDS = "required-after:vehicle@[0.9.0,)";
 
-    public static final String PROXY_CLIENT = "com.mrcrayfish.vehicle.proxy.ClientProxy";
-    public static final String PROXY_SERVER = "com.mrcrayfish.vehicle.proxy.ServerProxy";
+    public static final String PROXY_CLIENT = "UltraEndermen25.MrcrayfishVehicleModAddon.Proxy.ClientProxy";
+    public static final String PROXY_SERVER = "UltraEndermen25.MrcrayfishVehicleModAddon.Proxy.ServerProxy";
 }

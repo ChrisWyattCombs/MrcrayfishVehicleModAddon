@@ -1,0 +1,17 @@
+package UltraEndermen25.MrcrayfishVehicleModAddon;
+import UltraEndermen25.MrcrayfishVehicleModAddon.Proxy.Proxy;
+import UltraEndermen25.MrcrayfishVehicleModAddon.Reference.Reference;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION, acceptedMinecraftVersions = Reference.MOD_COMPATIBILITY, dependencies = Reference.MOD_DEPENDS)
+public class Main { 
+    @SidedProxy(clientSide = Reference.PROXY_CLIENT, serverSide = Reference.PROXY_SERVER)
+    public static Proxy proxy;
+	 @Mod.EventHandler
+	    public void PreInit(FMLPreInitializationEvent event){
+		 Proxy.preinit();
+	 }
+
+}

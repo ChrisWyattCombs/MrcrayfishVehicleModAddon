@@ -1,6 +1,6 @@
 package UltraEndermen25.MrcrayfishVehicleModAddon;
-import UltraEndermen25.MrcrayfishVehicleModAddon.Proxy.Proxy;
 import UltraEndermen25.MrcrayfishVehicleModAddon.Reference.Reference;
+import UltraEndermen25.MrcrayfishVehicleModAddon.proxy.Proxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -12,6 +12,7 @@ public class Main {
 	 @Mod.EventHandler
 	    public void PreInit(FMLPreInitializationEvent event){
 		 
+		 proxy.preinit();
 	 }
 
 }

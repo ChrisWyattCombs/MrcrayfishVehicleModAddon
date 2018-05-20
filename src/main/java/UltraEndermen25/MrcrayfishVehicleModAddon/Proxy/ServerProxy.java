@@ -1,5 +1,0 @@
-package UltraEndermen25.MrcrayfishVehicleModAddon.Proxy;
-
-public class ServerProxy implements Proxy {
-
-}
